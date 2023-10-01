@@ -1,4 +1,4 @@
-/* resource "google_container_node_pool" "workers" {
+ resource "google_container_node_pool" "workers" {
   name               = var.cluster_name
   location           = var.region
   cluster            = google_container_cluster.master.name
@@ -22,4 +22,4 @@
     create = "15m"
     update = "1h"
   }
-} */
+} 
