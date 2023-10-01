@@ -10,6 +10,7 @@ variable "project_id" {
 
 variable "state_bucket" {
   type    = string
+  default = "bucket-20231001012324"
 }
 
 variable "cluster_name" {
@@ -17,12 +18,9 @@ variable "cluster_name" {
   default = "gke-tf"
 }
 
-variable "k8s_version"{
-  type = string
-}
-
 variable "k8s_version" {
-  type = string
+  type    = string
+  default = "1.27.3-gke.100"
 }
 
 variable "min_node_count" {
